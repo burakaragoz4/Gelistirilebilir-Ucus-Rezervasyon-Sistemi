@@ -47,15 +47,15 @@ public class AdminGUI extends JFrame {
 	 * @throws SQLException 
 	 */
 	public AdminGUI(Admin admin) throws SQLException {
-		
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\ABRA\\Desktop\\indir.png"));
 		userModel = new DefaultTableModel();
 		Object[] colUserName = new Object [7];
 		colUserName [0]= "ID";
-		colUserName [1]= "Ad˝";
-		colUserName [2]= "Soyad˝";
-		colUserName [3]= "ﬁifre";
+		colUserName [1]= "Ad√Ω";
+		colUserName [2]= "Soyad√Ω";
+		colUserName [3]= "√ûifre";
 		colUserName [4]= "Email";
-		colUserName [5]= "Doum Tarihi";
+		colUserName [5]= "Do√∞um Tarihi";
 		colUserName [6]= "TC";
 		
 		userModel.setColumnIdentifiers(colUserName);
@@ -73,7 +73,7 @@ public class AdminGUI extends JFrame {
 			userModel.addRow(userData);
 		}
 		
-		setTitle("ADM›N");
+		setTitle("ADM√ùN");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 713, 498);
 		contentPane = new JPanel();
@@ -82,7 +82,7 @@ public class AdminGUI extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel Adminpanel1 = new JLabel("Ho˛geldiniz SAYIN"+" "+ admin.getAdmin_name() );
+		JLabel Adminpanel1 = new JLabel("Ho√ægeldiniz SAYIN"+" "+ admin.getAdmin_name() );
 		Adminpanel1.setBounds(10, 10, 273, 34);
 		Adminpanel1.setFont(new Font("Yu Gothic UI", Font.BOLD, 16));
 		contentPane.add(Adminpanel1);
