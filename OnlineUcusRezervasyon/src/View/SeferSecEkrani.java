@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package arayuzu;
+package View;
 
-import ayarlar.ButtonAyarlari;
+import Model.ButtonAyarlari;
 import java.awt.Color;
 
 /**
