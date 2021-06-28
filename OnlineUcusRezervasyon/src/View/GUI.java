@@ -188,6 +188,7 @@ public class GUI extends JFrame {
 							
 						}
 						else {
+							Helper.showMsg("üyeolundu");
 						boolean control = user.addUser(getDefaultCloseOperation(), üyeolma_adý.getText(),
 								üyeolma_soyadý.getText(), üyeolma_tc.getText(), üyeolma_sifre.getText(),
 								üyeolma_dt.getText(), üyeolma_mail.getText());
