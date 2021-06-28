@@ -36,24 +36,24 @@ public class GUI extends JFrame {
 	private JTextField txtOnlineUakRezervasyon;
 	private JTabbedPane tabbedPane;
 	private JPanel member_register;
-	private JLabel üye_soyad;
-	private JLabel üye_dt;
-	private JLabel üye_mail;
-	private JLabel üye_sifre;
-	private JTextField üyeolma_adı;
-	private JTextField üyeolma_soyadı;
-	private JTextField üyeolma_mail;
-	private JTextField üyeolma_dt;
-	private JLabel üye_tc;
-	private JTextField üyeolma_tc;
+	private JLabel Ã¼ye_soyad;
+	private JLabel Ã¼ye_dt;
+	private JLabel Ã¼ye_mail;
+	private JLabel Ã¼ye_sifre;
+	private JTextField Ã¼yeolma_adÃ½;
+	private JTextField Ã¼yeolma_soyadÃ½;
+	private JTextField Ã¼yeolma_mail;
+	private JTextField Ã¼yeolma_dt;
+	private JLabel Ã¼ye_tc;
+	private JTextField Ã¼yeolma_tc;
 	private JLabel lblSoyad_1;
 	private JLabel lblSoyad_2;
-	private JButton üyegirisbuton;
+	private JButton Ã¼yegirisbuton;
 	private JPasswordField adminsifre;
 	private DataBaseConnection Conn = new DataBaseConnection();
-	private JTextField üyegirismail;
+	private JTextField Ã¼yegirismail;
 	private JTextField adminid;
-	private JPasswordField üyeolma_sifre;
+	private JPasswordField Ã¼yeolma_sifre;
 	private JPasswordField uyegirisipassword;
 
 	/**
@@ -79,7 +79,7 @@ public class GUI extends JFrame {
 		setResizable(false);
 		setForeground(Color.BLUE);
 		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\ABRA\\Desktop\\indir.png"));
-		setTitle("Online Uçuş Rezervasyonu");
+		setTitle("Online UÃ§uÃ¾ Rezervasyonu");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 805, 457);
 		contentPane = new JPanel();
@@ -96,7 +96,7 @@ public class GUI extends JFrame {
 		txtOnlineUakRezervasyon.setForeground(Color.BLACK);
 		txtOnlineUakRezervasyon.setHorizontalAlignment(SwingConstants.CENTER);
 		txtOnlineUakRezervasyon.setFont(new Font("Tahoma", Font.PLAIN, 23));
-		txtOnlineUakRezervasyon.setText("ONLİNE UÇAK REZERVASYON SİSTEMİ\r\n");
+		txtOnlineUakRezervasyon.setText("ONLÃNE UÃ‡AK REZERVASYON SÃSTEMÃ\r\n");
 		txtOnlineUakRezervasyon.setColumns(10);
 
 		tabbedPane = new JTabbedPane(JTabbedPane.TOP);
@@ -105,100 +105,100 @@ public class GUI extends JFrame {
 
 		member_register = new JPanel();
 		member_register.setBackground(Color.WHITE);
-		tabbedPane.addTab("ÜYE OLMAK", null, member_register, null);
+		tabbedPane.addTab("ÃœYE OLMAK", null, member_register, null);
 		member_register.setLayout(null);
 
-		JLabel üye_ad = new JLabel("  AD                    :");
-		üye_ad.setFont(new Font("Tahoma", Font.BOLD, 12));
-		üye_ad.setBounds(10, 25, 125, 28);
-		member_register.add(üye_ad);
+		JLabel Ã¼ye_ad = new JLabel("  AD                    :");
+		Ã¼ye_ad.setFont(new Font("Tahoma", Font.BOLD, 12));
+		Ã¼ye_ad.setBounds(10, 25, 125, 28);
+		member_register.add(Ã¼ye_ad);
 
-		üye_soyad = new JLabel("  SOYAD              :");
-		üye_soyad.setFont(new Font("Tahoma", Font.BOLD, 12));
-		üye_soyad.setBounds(10, 64, 113, 28);
-		member_register.add(üye_soyad);
+		Ã¼ye_soyad = new JLabel("  SOYAD              :");
+		Ã¼ye_soyad.setFont(new Font("Tahoma", Font.BOLD, 12));
+		Ã¼ye_soyad.setBounds(10, 64, 113, 28);
+		member_register.add(Ã¼ye_soyad);
 
-		üye_dt = new JLabel("  DOĞUM TARİHİ :");
-		üye_dt.setFont(new Font("Tahoma", Font.BOLD, 12));
-		üye_dt.setBounds(10, 146, 125, 28);
-		member_register.add(üye_dt);
+		Ã¼ye_dt = new JLabel("  DOÃUM TARÃHÃ :");
+		Ã¼ye_dt.setFont(new Font("Tahoma", Font.BOLD, 12));
+		Ã¼ye_dt.setBounds(10, 146, 125, 28);
+		member_register.add(Ã¼ye_dt);
 
-		üye_mail = new JLabel("  E - MAIL           :");
-		üye_mail.setFont(new Font("Tahoma", Font.BOLD, 12));
-		üye_mail.setBounds(10, 184, 125, 28);
-		member_register.add(üye_mail);
+		Ã¼ye_mail = new JLabel("  E - MAIL           :");
+		Ã¼ye_mail.setFont(new Font("Tahoma", Font.BOLD, 12));
+		Ã¼ye_mail.setBounds(10, 184, 125, 28);
+		member_register.add(Ã¼ye_mail);
 
-		üye_sifre = new JLabel("  ŞİFRE               :");
-		üye_sifre.setFont(new Font("Tahoma", Font.BOLD, 12));
-		üye_sifre.setBounds(10, 222, 125, 28);
-		member_register.add(üye_sifre);
+		Ã¼ye_sifre = new JLabel("  ÃÃFRE               :");
+		Ã¼ye_sifre.setFont(new Font("Tahoma", Font.BOLD, 12));
+		Ã¼ye_sifre.setBounds(10, 222, 125, 28);
+		member_register.add(Ã¼ye_sifre);
 
-		üyeolma_adı = new JTextField();
-		üyeolma_adı.setBounds(127, 24, 277, 33);
-		member_register.add(üyeolma_adı);
-		üyeolma_adı.setColumns(10);
+		Ã¼yeolma_adÃ½ = new JTextField();
+		Ã¼yeolma_adÃ½.setBounds(127, 24, 277, 33);
+		member_register.add(Ã¼yeolma_adÃ½);
+		Ã¼yeolma_adÃ½.setColumns(10);
 
-		üyeolma_soyadı = new JTextField();
-		üyeolma_soyadı.setBounds(127, 63, 277, 33);
-		member_register.add(üyeolma_soyadı);
-		üyeolma_soyadı.setColumns(10);
+		Ã¼yeolma_soyadÃ½ = new JTextField();
+		Ã¼yeolma_soyadÃ½.setBounds(127, 63, 277, 33);
+		member_register.add(Ã¼yeolma_soyadÃ½);
+		Ã¼yeolma_soyadÃ½.setColumns(10);
 
-		üyeolma_mail = new JTextField();
-		üyeolma_mail.setBounds(127, 184, 277, 33);
-		member_register.add(üyeolma_mail);
-		üyeolma_mail.setColumns(10);
+		Ã¼yeolma_mail = new JTextField();
+		Ã¼yeolma_mail.setBounds(127, 184, 277, 33);
+		member_register.add(Ã¼yeolma_mail);
+		Ã¼yeolma_mail.setColumns(10);
 
-		üyeolma_dt = new JTextField();
-		üyeolma_dt.setBounds(127, 145, 277, 33);
-		member_register.add(üyeolma_dt);
-		üyeolma_dt.setColumns(10);
+		Ã¼yeolma_dt = new JTextField();
+		Ã¼yeolma_dt.setBounds(127, 145, 277, 33);
+		member_register.add(Ã¼yeolma_dt);
+		Ã¼yeolma_dt.setColumns(10);
 
-		üye_tc = new JLabel("  TC KİMLİK NO    :");
-		üye_tc.setFont(new Font("Tahoma", Font.BOLD, 12));
-		üye_tc.setBounds(10, 103, 125, 33);
-		member_register.add(üye_tc);
+		Ã¼ye_tc = new JLabel("  TC KÃMLÃK NO    :");
+		Ã¼ye_tc.setFont(new Font("Tahoma", Font.BOLD, 12));
+		Ã¼ye_tc.setBounds(10, 103, 125, 33);
+		member_register.add(Ã¼ye_tc);
 
-		üyeolma_tc = new JTextField();
-		üyeolma_tc.setBounds(127, 106, 277, 33);
-		member_register.add(üyeolma_tc);
-		üyeolma_tc.setColumns(10);
+		Ã¼yeolma_tc = new JTextField();
+		Ã¼yeolma_tc.setBounds(127, 106, 277, 33);
+		member_register.add(Ã¼yeolma_tc);
+		Ã¼yeolma_tc.setColumns(10);
 
-		üyeolma_sifre = new JPasswordField();
-		üyeolma_sifre.setBounds(127, 228, 277, 33);
-		member_register.add(üyeolma_sifre);
+		Ã¼yeolma_sifre = new JPasswordField();
+		Ã¼yeolma_sifre.setBounds(127, 228, 277, 33);
+		member_register.add(Ã¼yeolma_sifre);
 
-		JButton üyeolma_butonu = new JButton("KAYIT OL");
+		JButton Ã¼yeolma_butonu = new JButton("KAYIT OL");
 		User user = new User();
-		üyeolma_butonu.addActionListener(new ActionListener() {
+		Ã¼yeolma_butonu.addActionListener(new ActionListener() {
 			@SuppressWarnings("deprecation")
 			public void actionPerformed(ActionEvent arg0) {
-				if (üyeolma_adı.getText().length() == 0 || üyeolma_soyadı.getText().length() == 0
-						|| üyeolma_tc.getText().length() == 0 || üyeolma_dt.getText().length() == 0
-						|| üyeolma_mail.getText().length() == 0 || üyeolma_sifre.getText().length() == 0) {
+				if (Ã¼yeolma_adÃ½.getText().length() == 0 || Ã¼yeolma_soyadÃ½.getText().length() == 0
+						|| Ã¼yeolma_tc.getText().length() == 0 || Ã¼yeolma_dt.getText().length() == 0
+						|| Ã¼yeolma_mail.getText().length() == 0 || Ã¼yeolma_sifre.getText().length() == 0) {
 
 					Helper.showMsg("fill");
 				} else {
 					try {
-						if(üyeolma_tc.getText().length()<11 || üyeolma_tc.getText().length()>11) {
-							Helper.showMsg("üyetchatası");
+						if(Ã¼yeolma_tc.getText().length()<11 || Ã¼yeolma_tc.getText().length()>11) {
+							Helper.showMsg("Ã¼yetchatasÃ½");
 							
 						}
-						else if(üyeolma_sifre.getText().length()<8) {
-							Helper.showMsg("üyesifrehatası");
+						else if(Ã¼yeolma_sifre.getText().length()<8) {
+							Helper.showMsg("Ã¼yesifrehatasÃ½");
 							
 						}
 						else {
-						boolean control = user.addUser(getDefaultCloseOperation(), üyeolma_adı.getText(),
-								üyeolma_soyadı.getText(), üyeolma_tc.getText(), üyeolma_sifre.getText(),
-								üyeolma_dt.getText(), üyeolma_mail.getText());
+						boolean control = user.addUser(getDefaultCloseOperation(), Ã¼yeolma_adÃ½.getText(),
+								Ã¼yeolma_soyadÃ½.getText(), Ã¼yeolma_tc.getText(), Ã¼yeolma_sifre.getText(),
+								Ã¼yeolma_dt.getText(), Ã¼yeolma_mail.getText());
 						if (control) {
 							Helper.showMsg("success");
-							üyeolma_adı.setText(null);
-							üyeolma_soyadı.setText(null);
-							üyeolma_sifre.setText(null);
-							üyeolma_mail.setText(null);
-							üyeolma_dt.setText(null);
-							üyeolma_tc.setText(null);
+							Ã¼yeolma_adÃ½.setText(null);
+							Ã¼yeolma_soyadÃ½.setText(null);
+							Ã¼yeolma_sifre.setText(null);
+							Ã¼yeolma_mail.setText(null);
+							Ã¼yeolma_dt.setText(null);
+							Ã¼yeolma_tc.setText(null);
 
 						}
 						}
@@ -210,31 +210,31 @@ public class GUI extends JFrame {
 
 			}
 		});
-		üyeolma_butonu.setFont(new Font("Tahoma", Font.BOLD, 25));
-		üyeolma_butonu.setBackground(Color.WHITE);
-		üyeolma_butonu.setBounds(449, 110, 237, 54);
-		member_register.add(üyeolma_butonu);
+		Ã¼yeolma_butonu.setFont(new Font("Tahoma", Font.BOLD, 25));
+		Ã¼yeolma_butonu.setBackground(Color.WHITE);
+		Ã¼yeolma_butonu.setBounds(449, 110, 237, 54);
+		member_register.add(Ã¼yeolma_butonu);
 
-		JPanel üyegirissayfası = new JPanel();
-		üyegirissayfası.setBackground(Color.WHITE);
-		tabbedPane.addTab("GİRİŞ", null, üyegirissayfası, null);
-		üyegirissayfası.setLayout(null);
+		JPanel Ã¼yegirissayfasÃ½ = new JPanel();
+		Ã¼yegirissayfasÃ½.setBackground(Color.WHITE);
+		tabbedPane.addTab("GÃRÃÃ", null, Ã¼yegirissayfasÃ½, null);
+		Ã¼yegirissayfasÃ½.setLayout(null);
 
 		lblSoyad_1 = new JLabel("E MAIL        :");
 		lblSoyad_1.setBounds(120, 70, 79, 35);
 		lblSoyad_1.setFont(new Font("Tahoma", Font.BOLD, 12));
-		üyegirissayfası.add(lblSoyad_1);
+		Ã¼yegirissayfasÃ½.add(lblSoyad_1);
 
-		lblSoyad_2 = new JLabel("ŞİFRE          :");
+		lblSoyad_2 = new JLabel("ÃÃFRE          :");
 		lblSoyad_2.setFont(new Font("Tahoma", Font.BOLD, 12));
 		lblSoyad_2.setBounds(120, 115, 79, 35);
-		üyegirissayfası.add(lblSoyad_2);
+		Ã¼yegirissayfasÃ½.add(lblSoyad_2);
 
-		üyegirisbuton = new JButton("GİRİŞ");
-		üyegirisbuton.addActionListener(new ActionListener() {
+		Ã¼yegirisbuton = new JButton("GÃRÃÃ");
+		Ã¼yegirisbuton.addActionListener(new ActionListener() {
 			@SuppressWarnings("deprecation")
 			public void actionPerformed(ActionEvent e) {
-				if (üyegirismail.getText().length() == 0 || uyegirisipassword.getText().length() == 0) {
+				if (Ã¼yegirismail.getText().length() == 0 || uyegirisipassword.getText().length() == 0) {
 					Helper.showMsg("fill");
 
 				} else {
@@ -244,7 +244,7 @@ public class GUI extends JFrame {
 						Statement st = con.createStatement();
 						ResultSet rs = st.executeQuery("SELECT * FROM customer");
 						while (rs.next()) {
-							if (üyegirismail.getText().equals(rs.getString("email"))
+							if (Ã¼yegirismail.getText().equals(rs.getString("email"))
 									&& uyegirisipassword.getText().equals(rs.getString("password"))) {
 
 								User user = new User();
@@ -254,11 +254,11 @@ public class GUI extends JFrame {
 								user.seteMail(rs.getString("email"));
 								user.setDateofbirth(rs.getString("dateofbirth"));
 								user.setIdentitynumber(rs.getString("identitynumber"));
-								UserGUI uGUI = new UserGUI(user);
-								uGUI.setVisible(true);
+								SeferSecEkrani SeferSecGUI = new SeferSecEkrani();
+								SeferSecGUI.setVisible(true);
 								dispose();
 							} else {
-								Helper.showMsg("kullanıcıgirishatası");
+								
 
 							}
 
@@ -272,35 +272,35 @@ public class GUI extends JFrame {
 
 			}
 		});
-		üyegirisbuton.setFont(new Font("Tahoma", Font.BOLD, 25));
-		üyegirisbuton.setBounds(140, 186, 393, 63);
-		üyegirissayfası.add(üyegirisbuton);
+		Ã¼yegirisbuton.setFont(new Font("Tahoma", Font.BOLD, 25));
+		Ã¼yegirisbuton.setBounds(140, 186, 393, 63);
+		Ã¼yegirissayfasÃ½.add(Ã¼yegirisbuton);
 
-		üyegirismail = new JTextField();
-		üyegirismail.setBounds(209, 71, 305, 35);
-		üyegirissayfası.add(üyegirismail);
-		üyegirismail.setColumns(10);
+		Ã¼yegirismail = new JTextField();
+		Ã¼yegirismail.setBounds(209, 71, 305, 35);
+		Ã¼yegirissayfasÃ½.add(Ã¼yegirismail);
+		Ã¼yegirismail.setColumns(10);
 
 		uyegirisipassword = new JPasswordField();
 		uyegirisipassword.setBounds(209, 116, 305, 34);
-		üyegirissayfası.add(uyegirisipassword);
+		Ã¼yegirissayfasÃ½.add(uyegirisipassword);
 
-		JPanel ADMİN = new JPanel();
-		ADMİN.setBackground(Color.WHITE);
-		tabbedPane.addTab("ADMİN", null, ADMİN, null);
-		ADMİN.setLayout(null);
+		JPanel ADMÃN = new JPanel();
+		ADMÃN.setBackground(Color.WHITE);
+		tabbedPane.addTab("ADMÃN", null, ADMÃN, null);
+		ADMÃN.setLayout(null);
 
-		JLabel admin_id = new JLabel("ADMİN    :");
+		JLabel admin_id = new JLabel("ADMÃN    :");
 		admin_id.setBounds(137, 59, 93, 51);
 		admin_id.setFont(new Font("Tahoma", Font.BOLD, 12));
-		ADMİN.add(admin_id);
+		ADMÃN.add(admin_id);
 
-		JLabel lblSoyad_2_1 = new JLabel("ŞİFRE      :");
+		JLabel lblSoyad_2_1 = new JLabel("ÃÃFRE      :");
 		lblSoyad_2_1.setBounds(137, 139, 73, 15);
 		lblSoyad_2_1.setFont(new Font("Tahoma", Font.BOLD, 12));
-		ADMİN.add(lblSoyad_2_1);
+		ADMÃN.add(lblSoyad_2_1);
 
-		JButton admin_button = new JButton("GİRİŞ");
+		JButton admin_button = new JButton("GÃRÃÃ");
 		admin_button.addActionListener(new ActionListener() {
 			@SuppressWarnings("deprecation")
 			public void actionPerformed(ActionEvent e) {
@@ -325,7 +325,7 @@ public class GUI extends JFrame {
 							dispose();
 
 						} else {
-							Helper.showMsg("admingirishatası");
+							Helper.showMsg("admingirishatasÃ½");
 						}
 
 					}
@@ -338,15 +338,15 @@ public class GUI extends JFrame {
 		});
 		admin_button.setFont(new Font("Tahoma", Font.BOLD, 25));
 		admin_button.setBounds(187, 199, 309, 51);
-		ADMİN.add(admin_button);
+		ADMÃN.add(admin_button);
 
 		adminsifre = new JPasswordField();
 		adminsifre.setBounds(203, 120, 293, 34);
-		ADMİN.add(adminsifre);
+		ADMÃN.add(adminsifre);
 
 		adminid = new JTextField();
 		adminid.setBounds(203, 62, 293, 41);
-		ADMİN.add(adminid);
+		ADMÃN.add(adminid);
 		adminid.setColumns(10);
 
 	}
