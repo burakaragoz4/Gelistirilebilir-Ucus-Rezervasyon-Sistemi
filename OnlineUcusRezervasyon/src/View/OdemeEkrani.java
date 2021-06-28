@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 
-package arayuzu;
+package View;
 
-import ayarlar.ButtonAyarlari;
-import ayarlar.TextAyarlari;
+import Model.ButtonAyarlari;
+import Model.TextAyarlari;
 import java.awt.Color;
 
 /**
