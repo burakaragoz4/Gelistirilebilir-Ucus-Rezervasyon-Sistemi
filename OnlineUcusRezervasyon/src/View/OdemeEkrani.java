@@ -56,7 +56,7 @@ public class OdemeEkrani extends javax.swing.JFrame {
         setResizable(false);
 
         odemeEkranPanel.setBackground(new java.awt.Color(255, 204, 204));
-
+    setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\ABRA\\Desktop\\indir.png"));
         mesajLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         mesajLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         mesajLabel.setText("Ucak Bilet Reservasiyon Sistemi");
