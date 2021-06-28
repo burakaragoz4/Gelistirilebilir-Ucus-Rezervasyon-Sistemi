@@ -48,7 +48,7 @@ public class SeferSecEkrani extends javax.swing.JFrame {
         setResizable(false);
 
         seferSecEkranPanel.setBackground(new java.awt.Color(255, 51, 255));
-
+    setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\ABRA\\Desktop\\indir.png"));
         mesajLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         mesajLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         mesajLabel.setText("Ucuz Ucak Bileti Reservasiyon Sistemi");
